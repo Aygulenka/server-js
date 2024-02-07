@@ -1,8 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors'); // импорт модуля cors
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors()); // использование cors middleware
 
 // Простая база данных пользователей (в реальном приложении лучше использовать базу данных)
 const users = [];
