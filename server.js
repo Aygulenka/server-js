@@ -7,7 +7,6 @@ app.use(bodyParser.json());
 const express = require('express');
 const bodyParser = require('body-parser');
 
-
 // Простая база данных пользователей (в реальном приложении лучше использовать базу данных)
 const users = [];
 
